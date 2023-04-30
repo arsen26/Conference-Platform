@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K4</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<!--TASKBARI-->
+<nav class="bg-blue-350 px-4 py-3">
+    <div class="flex justify-between items-center" >
+        <a href="#">
+            <img src="logo.png" alt="">
+        </a>
+        <div class="hidden md:flex gap-2">
+            <a href="#" class="hover:bg-white/20 text-white px-5 py-3 rounded-md">
+                HOME
+            </a>
+
+            <a href="#" class="text-white px-5 py-3 rounded-md hover:bg-white/20">
+                RRETH NESH
+            </a>
+
+            <a href="#"href="#" class="text-white px-5 py-3 rounded-md hover:bg-white/20">
+                PARTNERITETI
+            </a>
+            <a href="#" class="text-white px-5 py-3 rounded-md hover:bg-white/20">
+                LAJMET E FUNDIT
+
+                <span class="relative flex h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                  </span>
+            </a>
+        </div>
+        <div class="flex gap-4">
+            <a href="#" class="text-grey-400 py-3 px-2 hover:text-grey-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" stroke="#fff"></path>
+                    <path d="M21 21l-6 -6" stroke="#fff"></path>
+                 </svg>
+            </a>
+            <a href="#" class="text-grey-400 py-3 px-2 hover:text-grey-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"  stroke="#fff" ></path>
+                    <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"  stroke="#fff" ></path>
+                    <path d="M9 17v1a3 3 0 0 0 6 0v-1"  stroke="#fff" ></path>
+                 </svg>
+            </a>
+
+            
+            <a href="#" class="text-grey-400 py-3 px-2 hover:text-grey-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"  stroke="#fff" ></path>
+                    <path d="M4 6l16 0"  stroke="#fff" ></path>
+                    <path d="M4 12l16 0"  stroke="#fff" ></path>
+                    <path d="M4 18l16 0"  stroke="#fff" ></path>
+                 </svg>
+            </a>
+
+            <a href="#" class="block bg-blue-600 text-grey-200 px-5 py-3 rounded-md hover:bg-blue-600/80 ">
+                Sign In
+            </a>
+
+
+        </div>
+
+    </div>
+<!--MOBILE MENU-->
+        <div class="block md:hidden" id="mobile_menu" >
+            <div class="flex flex-col gap-1 py-3">
+                <a href="" class="bg-gray-900 text-white block px-3 py-2 rounded-md font-medium">
+                    HOME
+                </a>
+                <a href="#" class="text-gray-300 hover:bg-white/5 text-white block px-3 py-2 rounded-md">
+                    RRETH NESH
+                </a>
+                <a href="#" class="text-gray-300 hover:bg-white/5 text-white block px-3 py-2 rounded-md">
+                    PARTNERITETI
+                </a>
+                <a href="#" class="text-gray-300 hover:bg-white/5 text-white block px-3 py-2 rounded-md">
+                    LAJMET E FUNDIT
+                </a>
+            </div>
+        </div>
+
+</nav>
+<script>
+        let button = document.querySelector('[data-mobile-menu]');
+        let mobileMenu = document.getElementById('mobile-menu');
+
+        button.addEventListener('click', ()=>{
+            mobileMenu.classList.toggle('hidden');
+        })
+</script>
+
+
+
+
+
+<!--KONFERENCA-->
+
+<div class="bg-transparent py-6 sm:py-8 lg:py-12">
+    <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="grid gap-4 lg:grid-cols-5">                
+  
+          <div class="relative overflow-hidden rounded-lg bg-gray-100 lg:col-span-6 ">
+                <video src="v1.mp4" autoplay muted loop >
+
+                </video>
+      
+                <span class="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">sale</span>
+      
+                
+              </div>
+            </div>
+        
+            <div class="md:py-8">
+              <div class="mb-2 md:mb-3">
+                <span class="mb-0.5 inline-block text-gray-100">Art</span>
+                <h2 class="text-2xl font-bold text-gray-100 lg:text-3xl">Artisti brenda nesh</h2>
+              </div>
+              
+              <div class="mb-4">
+                <div class="flex items-end gap-2">
+                  <span class="text-xl font-bold text-gray-100 md:text-2xl">$10.00</span>
+                  <span class="mb-0.5 text-red-500 line-through">$50.00</span>
+                </div>
+                    </div>
+           
+              <div class="mb-6 flex items-center gap-2 text-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+      
+                <span class="text-sm">Ju mund ta anulloni rezervimin tuaj 2-4 dite para dates qe do te mbahet konferenca</span>
+              </div>
+              <div class="flex gap-2.5">
+                <a href="#" class="inline-block flex-1 rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 sm:flex-none md:text-base">Rezervo tani!</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="bg-transparent py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8 text-2xl">
+    
+       
+          <h2 class="text-2xl font-bold text-gray-100 lg:text-3xl">Ne perfundim te kesaj konference ju do te jeni te afte te kuptoni se si:</h2>
+
+               <ol type="A" class=" text-sm text-gray-100 ">
+                <li>1. <B> Artisti brenda nesh është aftësia për të krijuar dhe shprehur veten në mënyra të ndryshme, përfshirë vizatim, muzikë, shkrim dhe performancë.</B></li>
+                <li>2. <B>Duke kultivuar dhe praktikuar aftësitë tuaja artistike, ju mund të ndikoni në njerëzit në mënyra të ndryshme dhe të shprehni veten në mënyra të reja dhe të krijoni një ndryshim pozitiv në botë.</B></li>
+                <li>3. <B> Nëse keni pasione artistike, është e rëndësishme të punoni vazhdimisht për të zhvilluar dhe përmirësuar aftësitë tuaja, duke marrë klasa ose duke praktikuar në mënyra të ndryshme.</B></li>
+
+                <li>4. <B> Arti mund të jetë një mjet i fuqishëm për t'i shprehur emocionet dhe për të ndryshuar perceptimet dhe qëndrimet ndaj çështjeve të ndryshme shoqërore dhe politike.</B></li>
+                <li>5. <B> Duke praktikuar artin, ju mund të jeni më kreativë dhe të gjeni zgjidhje të reja dhe të ndryshme për probleme të ndryshme në jetën tuaj dhe në botën në përgjithësi.</B></li>
+
+               </ol>
+</div>
+</div>
+
+
+
+<!--NJE THENIE RRETH TEMES QE KA KONFERENCA E KLIKUAR-->
+
+
+<section class="text-gray-100 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-200 mb-8" viewBox="0 0 975.036 975.036">
+        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+      </svg>
+      <p class="leading-relaxed text-lg">"  Arti është si një fryt që rritet te njeriu, njësoj si fryti te pema ose si fëmija në mitrën e nënës." </p>
+      <span class="inline-block h-1 w-10 rounded bg-indigo-100 mt-8 mb-6"></span>
+      <h2 class="text-gray-100 font-medium title-font tracking-wider text-sm">Jean Arp</h2>
+      <p class="text-gray-100">German-French sculptor, painter, and poet. </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+      <!--SUGJERIME NGA FAQJA-->
+
+      <div class="bg-transparent py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <div class="mb-10 md:mb-16">
+            <h2 class="mb-4 text-center text-2xl font-bold text-gray-100 md:mb-6 lg:text-3xl">SUGJERIME</h2>
+                </div>
+      
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div>
+              <a href="#" class="group relative block h-70 overflow-hidden rounded-t-lg bg-gray-100">
+                <video autoplay muted loop class="object-center">
+
+                    <source src="v2.mp4" type="video/mp4">
+                </video>
+      
+                <span class="absolute left-0 top-3 rounded-r-lg bg-red-500 px-3 py-1.5 text-sm font-semibold uppercase tracking-wider text-white">-50%</span>
+              </a>
+      
+              <div class="flex items-start justify-between gap-2 rounded-b-lg bg-gray-100 p-4">
+                <div class="flex flex-col">
+                  <a href="#" class="font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-lg">Teknologji</a>
+                  <span class="text-sm text-gray-500 lg:text-base">Siguria kibernetike</span>
+                </div>
+      
+                <div class="flex flex-col items-end">
+                  <span class="font-bold text-gray-600 lg:text-lg">$19.99</span>
+                  <span class="text-sm text-red-500 line-through">$39.99</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="#" class="group relative block h-70 overflow-hidden rounded-t-lg bg-gray-100">
+                <img src="vijim1.png" loading="lazy" alt="Photo by Austin Wade" class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+
+              </a>
+      
+              <div class="flex items-start justify-between gap-2 rounded-b-lg bg-gray-100 p-4">
+                <div class="flex flex-col">
+                  <a href="#" class="font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-lg">Teknologji</a>
+                  <span class="text-sm text-gray-500 lg:text-base">Cfare na pret ne te ardhmen? </span>
+                </div>
+      
+                <div class="flex flex-col items-end">
+                  <span class="font-bold text-gray-600 lg:text-lg">$29.99</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="#" class="group relative block h-70 overflow-hidden rounded-t-lg bg-gray-100">
+                <img src="vijim2.png" loading="lazy" alt="Photo by Austin Wade" class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+              </a>
+      
+              <div class="flex items-start justify-between gap-2 rounded-b-lg bg-gray-100 p-4">
+                <div class="flex flex-col">
+                  <a href="#" class="font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-lg">FINANCE</a>
+                  <span class="text-sm text-gray-500 lg:text-base">Menaxhoni me mire te ardhurat tuaja.</span>
+                </div>
+      
+                <div class="flex flex-col items-end">
+                  <span class="font-bold text-gray-600 lg:text-lg">$35.00</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="#" class="group relative block h-70 overflow-hidden rounded-t-lg bg-gray-100">
+                <video autoplay muted loop class="object-center">
+
+                    <source src="v3.mp4" type="video/mp4">
+                </video>              </a>
+      
+              <div class="flex items-start justify-between gap-2 rounded-b-lg bg-gray-100 p-4">
+                <div class="flex flex-col">
+                  <a href="#" class="font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-lg">Biznes</a>
+                  <span class="text-sm text-gray-500 lg:text-base">Lulezo biznesin tend!</span>
+                </div>
+      
+                <div class="flex flex-col items-end">
+                  <span class="font-bold text-gray-600 lg:text-lg">$49.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+  <footer class="text-gray-50 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-50">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">C4</span>
+      </a>
+      <p class="text-sm text-gray-50 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 C4 —
+        <a href="https://twitter.com/knyttneve" class="text-gray-4100 ml-1" rel="noopener noreferrer" target="_blank">Created by A1 informatics students</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-50">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-50">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-50">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-50">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+
+
+
+</body>
+</html>
