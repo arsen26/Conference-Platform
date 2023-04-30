@@ -155,7 +155,7 @@
             <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="vijim2.png" alt="blog">
             <div class="p-6">
               <h2 class="tracking-widest text-xs title-font font-medium text-gray-50 mb-1">FINANCE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-50 mb-3">Menaxho lekun tend</h1>
+              <h1 class="title-font text-lg font-medium text-gray-50 mb-3">Menaxhoni me mire te ardhurat tuaja.</h1>
               <p class="text-gray-300 leading-relaxed mb-3">Kjo është një mundësi e shkëlqyeshme për të marrë informacione dhe këshilla nga ekspertët e fushës për të menaxhuar më mirë financat personale. Në këtë konferencë, do të diskutohen strategjitë më efektive për të bërë pagesat, për të investuar, dhe për të planifikuar për të ardhmen. Pjesëmarrja në këtë konferencë
                  do të ndihmojë të gjithë ata që duan të mësojnë si të bëjnë më shumë me paratë e tyre dhe të rrisin dijen e tyre në fushën e financave personale.</p>
               <div class="flex items-center flex-wrap ">
@@ -253,7 +253,7 @@
             <span class="mt-1 text-gray-50 text-sm">12 Jun 2019</span>
           </div>
           <div class="md:flex-grow">
-            <h2 class="text-2xl font-medium text-gray-50 title-font mb-2">Sa te sigurt jemi ne aspektin e kibernetikes?</h2>
+            <h2 class="text-2xl font-medium text-gray-50 title-font mb-2">Siguria Kibernetike</h2>
             <p class="leading-relaxed">Një konferencë me temën "Kibernetika" është e planifikuar për të diskutuar rreth sfidave dhe mundësive që ofron teknologjia në fushën e kibernetikës. 
               Në këtë konferencë, ekspertë nga fusha e teknologjisë do të prezantojnë tendencat më të reja dhe zhvillimet në kibernetikë, si dhe do të diskutojnë rreth rëndësisë së sigurisë në botën e kibernetikës. Pjesëmarrësit në këtë konferencë do të kenë 
               mundësinë të njohin teknologjitë më të fundit dhe të ndajnë eksperiencat e tyre në përdorimin e teknologjisë në sektorin publik dhe privat. Konferenca do të jetë një platformë e shkëlqyeshme për të mësuar më shumë rreth rreziqeve të mundshme dhe rregullave të sigurisë në botën e kibernetikës,
@@ -526,6 +526,7 @@
   <footer class="text-gray-50 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-50">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
         <span class="ml-3 text-xl">C4</span>
