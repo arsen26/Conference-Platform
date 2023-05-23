@@ -1,98 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Conference - sign up</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="bg-slate-900">
-    <section class="h-screen">
-        <div class="h-full">
-          <div
-              class="g-6 flex h-full flex-wrap items-center justify-center ">
-            <div class=" mb-12 mr-6 md:mb-0 md:w-8/12 lg:w-5/12  xl:w-5/12">
-              <form>
-                <div class="relative mb-6" data-te-input-wrapper-init>
-                    <input
-                      type="text"
-                      class="peer block min-h-[auto] w-full rounded border-2 border-slate-600 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                      id="exampleFormControlInput2"
-                      placeholder="Name" />
-                    <label
-                      for="exampleFormControlInput2"
-                      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary peer-focus:bg-slate-900 "
-                      >Name
-                    </label>
-                  </div>
+		<style>
+			body {
+				background-image: url("background.jpg");
+			}
+		</style>
 
-                <!-- Email input -->
-                <div class="relative mb-6" data-te-input-wrapper-init>
-                  <input
-                    type="text"
-                    class="peer block min-h-[auto] w-full rounded border-2 border-slate-600 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                    id="exampleFormControlInput2"
-                    placeholder="Email address" />
-                  <label
-                    for="exampleFormControlInput2"
-                    class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary peer-focus:bg-slate-900 "
-                    >Email address
-                  </label>
-                </div>
+		<title>Register</title>
+	</head>
+	<body>
+		<section class="min-h-screen flex items-center justify-center">
+			<!-- login container -->
+			<div
+				class="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center"
+			>
+				<!-- form -->
+				<div class="md:w-1/2 px-8 md:px-16">
+					<h2 class="font-bold text-2xl text-[#002D74]">Register</h2>
+					<p class="text-xs mt-4 text-[#002D74]">
+						Platform Registration Form
+					</p>
 
-                <!-- Password input -->
-                <div class="relative mb-6" data-te-input-wrapper-init>
-                  <input
-                    type="password"
-                    class="peer block min-h-[auto] w-full rounded border-2 border-slate-600 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                    id="exampleFormControlInput22"
-                    placeholder="Password" />
-                  <label
-                    for="exampleFormControlInput22"
-                    class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary peer-focus:bg-slate-900"
-                    >Password
-                  </label>
-                </div>
+					<form action="" class="flex flex-col gap-4">
+						<input
+							class="p-2 mt-8 rounded-xl border"
+							type="text"
+							name="name"
+							placeholder="Name"
+						/>
+						<input
+							class="p-2 rounded-xl border"
+							type="email"
+							name="email"
+							placeholder="Email"
+						/>
+						<div class="relative">
+							<input
+								class="p-2 rounded-xl border w-full"
+								type="password"
+								name="password"
+								placeholder="Password"
+							/>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="gray"
+								class="bi bi-eye absolute top-1/2 right-3 -translate-y-1/2"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"
+								/>
+								<path
+									d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
+								/>
+							</svg>
+						</div>
+						<button
+							class="bg-[#002D74] rounded-xl text-white py-2 hover:scale-105 duration-300"
+						>
+							Register
+						</button>
+					</form>
 
-                <div class="relative mb-6" data-te-input-wrapper-init>
-                    <input
-                      type="password"
-                      class="peer block min-h-[auto] w-full rounded border-2 border-slate-600 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                      id="exampleFormControlInput22"
-                      placeholder="Confirm Password" />
-                    <label
-                      for="exampleFormControlInput22"
-                      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary peer-focus:bg-slate-900"
-                      >Confirm Password
-                    </label>
-                  </div>
-                <!-- Register button -->
-                <div class="text-center lg:text-left">
-                  <button
-                    type="button"
-                    class="inline-block rounded bg- border-2 border-slate-400 px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                    data-te-ripple-init
-                    data-te-ripple-color="light">
-                    Register
-                  </button>
+					<div
+						class="mt-3 text-xs flex justify-between items-center text-[#002D74]"
+					>
+						<a href="./login.html">
+							<p>Already Registered?</p>
+						</a>
+					</div>
+				</div>
 
-                  <!-- Register link -->
-                  <p class="mb-0 mt-2 pt-1 text-white font-semibold">
-                    <a
-                      href="./signin.html"
-                      class="text-danger transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
-                      >Already Registered?</a
-                    >
-                  </p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+				<!-- image -->
+				<div class="md:block hidden w-1/2">
+					<img class="rounded-2xl" src="foto.png" />
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
