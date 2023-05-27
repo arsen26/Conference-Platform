@@ -1,6 +1,6 @@
 body {
 	background-image: url("./blob-scene-haikei.svg");
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat; */
 	background-size: cover;
 	background-color: #15539f;
 }
