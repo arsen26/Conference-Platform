@@ -1,0 +1,19 @@
+body {
+	background-image: url("./blob-scene-haikei.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #15539f;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #124290;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #092552;
+}
